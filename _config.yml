@@ -9,6 +9,7 @@
 title: "Better Equity: Improving stock options for startup employees"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://look.github.io/better-equity" # the base hostname & protocol for your site
+exclude: [ "README.md" ]
 
 # Build settings
 markdown: kramdown
