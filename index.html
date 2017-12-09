@@ -1,95 +1,11 @@
 ---
 layout: default
-companies:
-  - name: Amplitude
-    url: https://amplitude.com/
-    details: 10 years to exercise
-    details_url: https://amplitude.com/blog/2015/12/01/employee-equity-is-broken-heres-our-fix/
-  - name: Asana
-    url: https://asana.com/
-    details: 10 years to exercise
-    details_url: https://twitter.com/moskov/status/623281365983842304
-  - name: Clef
-    url: https://getclef.com/
-    details: 7 years to exercise
-    details_url: https://github.com/clef/handbook/blob/master/Hiring%20Documents/Guide%20to%20Your%20Equity.md
-  - name: Coinbase
-    url: https://www.coinbase.com/
-    details: 7 years to exercise for employees who join after August 2015 and stay for 2 years
-    details_url: https://medium.com/@barmstrong/improving-equity-compensation-at-coinbase-8749979409c3
-  - name: Expensify
-    url: https://www.expensify.com/
-    details: 2 years to exercise after 3 years
-    details_url: http://blog.expensify.com/2015/10/05/building-a-pro-employee-company-updating-equity-distribution-at-expensify/
-  - name: Kayako
-    url: https://www.kayako.com
-    details: 10 years to exercise
-    details_url: https://twitter.com/jmedwards/status/685778938992410625
-  - name: Pinterest
-    url: https://www.pinterest.com/
-    details: 7 years to exercise after 2 years
-    details_url: http://fortune.com/2015/03/23/pinterest-employee-taxes/
-  - name: Quora
-    url: https://www.quora.com/
-    details: 10 years to exercise
-    details_url: https://www.quora.com/Why-do-most-startups-force-employees-to-exercise-their-vested-ISO-options-within-90-days-if-they-leave-rather-than-the-option-to-convert-to-NSOs
 ---
 <div class="home">
-  <h1>Too many employees lose their stock options.<br> It's time for <strong>Better Equity</strong>.</h1>
-
-  <p>At a typical startup, employees must exercise their stock options within 90 days of leaving, or they lose them. Paying to exercise stock options is a risky bet that can incur a huge tax bill (<a href="#details">details</a>). This causes employees to de-value equity, making it hard for startups to attract the best people. Companies can fix this by allowing employees a longer period of time to exercise their options.</p>
-
-  <h2>Companies with extended exercise</h2>
-
-  <p>The following companies have publicly stated that they give employees more time to exercise their options:</p>
-  
-  <table class="company-list">
-    {% for company in page.companies %}
-      <tr>
-        <td><a href="{{ company.url }}">{{ company.name }}</a></td>
-        <td>{{ company.details }}<sup><a href="{{ company.details_url }}">[{{ forloop.index }}]</a></sup></td>
-      </tr>
-    {% endfor %}
-  </table>
- 
-  <h2 id="details">A major problem with employee equity</h2>
-
-  <p>Startups typically compensate employees in a combination of salary and equity, in the form of <a href="https://en.wikipedia.org/wiki/Incentive_stock_option">incentive stock options</a>. Employees take a smaller salary with the belief that if the company does well, their stock options will make up the difference.</p>
-
-  <p>Sadly, even when a startup does do well, this is often not the case. Employee stock options as granted by most startups <strong>must be exercised within 90 days of leaving</strong>. This causes two problems for employees:</p>
-
-  <ol>
-    <li>Many employees will not have the money to do so and will have to forfeit the options -- which they earned in exchange for lower salary compensation.</li>
-    <li>Worse, exercising options can cause a huge tax bill. If the strike price has increased since an employee's grant, the increase is considered taxable under the Alternative Minimum Tax (<a href="https://medium.com/@barryjk/the-tax-law-that-is-unintentionally-hammering-silicon-valley-employees-894a7b54ba8a">read more</a>). If the company later fails, former employees who exercised their options will have paid considerable taxes for a worthless asset.</li>
-  </ol>
-
-  <p>Within three months of leaving a job, employees must decide if they will make a risky gamble buying an illiquid asset that is taxed immediately.</p>
-
-  <p>Faced with this decision, many employees walk away from their equity. This causes employees to de-value equity, and that makes it hard for startups to attract the best people.</p>
- 
-  <h2>How to fix it</h2>
-
-  <p>One way to avoid these problems is to early exercise. However, this may require a large amount of cash and is often offered only to very early employees (or not at all).</p>
-
-  <p>Easier and friendlier to all employees is for companies to allow a longer exercise window for stock options. By extending the exercise window, employees can exercise their options once a liquidity event occurs -- or simply once they've saved enough to cover their costs. Allowing a longer exercise window significantly de-risks the decision to purchase stock options.</p>
-
-  <p>The purpose of <strong>Better Equity</strong> is to highlight companies that offer this benefit. These companies may or may not succeed. But if they do, their employees will have a better chance of sharing in the proceeds.</p>
-  
-  <h2>Further reading</h2>
+  <p>Other people are doing this better. Please see:</p>
 
   <ul>
-    <li>Sam Altman: <a href="http://blog.samaltman.com/employee-equity">Employee Equity</a></li>
-   <li>Tikhon Bernstam: <a href="https://medium.com/@tikhon/founders-it-s-not-1990-stop-treating-your-employees-like-it-is-523f48fe90cb">Founders: It’s not 1990. Stop treating your employees like it is.</a></li>
-    <li>Joe Beninato: <a href="https://medium.com/@beninato/startup-stock-option-changes-5df706da0317">Startup Stock Option Changes</a></li>
-    <li>Aaron Harris: <a href="http://www.aaronkharris.com/we-need-to-rethink-employee-compensation">We need to rethink employee compensation</a></li>
-    <li>Luke Francl: <a href="http://www.recursion.org/2014/4/20/cynical-reason-startups-should-grant-employees-more-equity">The cynical reason startups should grant employees more equity</a></li>
-    <li>Julia Evans: <a href="http://jvns.ca/blog/2015/12/30/do-the-math-on-your-stock-options/">Things you should know about stock options before negotiating an offer</a></li>
-    <li>Zach Holman: <a href="http://zachholman.com/posts/fuck-your-90-day-exercise-window/">Fuck Your 90 Day Exercise Window</a> and <a href="https://github.com/holman/extended-exercise-windows">holman/extended-exercise-windows</a></li>
-  </ul>
-
-  <h3>Detailed guides to startup equity compensation</h3>
-  <ul>
+    <li><a href="https://github.com/holman/extended-exercise-windows">Startups with Extended Exercise Windows</a></li>
     <li><a href="https://github.com/jlevy/og-equity-compensation">The Open Guide to Equity Compensation</a> by Joshua Levy</li>
-    <li><a href="http://www.amazon.com/dp/B0055PQ4H8">An Introduction to Stock and Options</a> by David Weekly</li>
   </ul>
 </div>
